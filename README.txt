@@ -1,27 +1,27 @@
 USCN BRANDS WEBSITE
+Host: https://brands.uscn.uk/
 
-Upload the CONTENTS of this folder to the root of your chosen subdomain.
-No build step, external stylesheet, database or server-side code is required.
-Every HTML page has its complete CSS embedded in a <style> element.
+Upload the contents of this folder to the subdomain web root.
+No build step required. Each HTML file contains its own CSS.
+The host must serve directory index.html files for trailing-slash URLs.
 
 PAGES
-index.html                 Axis-focused directory and introduction to USCN
-axis/index.html            Axis products, review link and software information
-axis/q1659/index.html      Full Q1659 hands-on review
-about/index.html           About USCN and the review approach
+/                         Homepage / brand directory
+/axis/                    Axis profile and review list
+/axis/q1659/              AXIS Q1659 review
+/axis/p5635-e-mk-ii/       AXIS P5635-E Mk II review
+/about/                   About USCN and review approach
+/sitemap/                 Human-readable site map
 
-General information pages do not state a fixed brand or review inventory.
-Standard hosting serves directory index.html files at /axis/, etc.
-Explicit index.html links also work when opening the files locally.
-The camera manufacturer's name is Axis, with the directory /axis/.
+SEARCH FILES
+sitemap.xml               Absolute clean URLs on brands.uscn.uk
+robots.txt                References the XML sitemap
+
+All canonical and sitemap page URLs end in / without index.html.
+Homepage navigation links may retain index.html as requested.
+Subpage navigation links use directory paths ending in /.
+The PTZ article contains no references to purchase history.
 No deployment has been performed.
 
-IF REPLACING AN EARLIER UPLOAD
-Delete the old brand directories (swann, hikvision, dahua, tenvis, annke,
-dedicated-micros and reolink) and the old assets folder from your web host.
-Uploading this revised ZIP alone may not remove files already on the server.
-
-NAVIGATION
-Homepage / brand directory -> Axis brand profile -> Axis review list -> individual review.
-The homepage contains no direct product-review links.
-Axis selection reasons are USCN observations; no unverified competitor prices are published.
+When replacing an older upload, remove obsolete brand directories
+and assets from the host if they still exist there.
