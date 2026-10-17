@@ -31,9 +31,15 @@ ROUTING UPDATE
 /axis/post/q1659/index.html is the Q1659 article.
 /axis/post/p5635-e-mk-ii/index.html is the PTZ article.
 All directories and URL paths use lowercase.
-/axis/post/ returns visitors to the Axis brand review list.
+/axis/post/ is a normal article listing page with no automatic redirect.
 
 When uploading this replacement, remove the obsolete /axis/q1659/ and
 /axis/p5635-e-mk-ii/ directories. Ensure /axis/index.html is overwritten
 with the brand index from this ZIP. If /axis/ still serves an old article,
 check host redirects, default-document settings and cached content.
+
+NAVIGATION FIX
+All internal navigation uses explicit paths from the subdomain root.
+No page contains an automatic redirect. Replace /axis/index.html with
+the brand page from this package. Clear any hosting/CDN cache if an old
+redirect remains. Server-side redirects are not configured by this ZIP.
