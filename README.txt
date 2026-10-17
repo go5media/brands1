@@ -8,8 +8,8 @@ The host must serve directory index.html files for trailing-slash URLs.
 PAGES
 /                         Homepage / brand directory
 /axis/                    Axis profile and review list
-/axis/q1659/              AXIS Q1659 review
-/axis/p5635-e-mk-ii/       AXIS P5635-E Mk II review
+/axis/post/q1659/              AXIS Q1659 review
+/axis/post/p5635-e-mk-ii/       AXIS P5635-E Mk II review
 /about/                   About USCN and review approach
 /sitemap/                 Human-readable site map
 
@@ -25,3 +25,15 @@ No deployment has been performed.
 
 When replacing an older upload, remove obsolete brand directories
 and assets from the host if they still exist there.
+
+ROUTING UPDATE
+/axis/index.html is the brand page and contains the links to both posts.
+/axis/post/q1659/index.html is the Q1659 article.
+/axis/post/p5635-e-mk-ii/index.html is the PTZ article.
+All directories and URL paths use lowercase.
+/axis/post/ returns visitors to the Axis brand review list.
+
+When uploading this replacement, remove the obsolete /axis/q1659/ and
+/axis/p5635-e-mk-ii/ directories. Ensure /axis/index.html is overwritten
+with the brand index from this ZIP. If /axis/ still serves an old article,
+check host redirects, default-document settings and cached content.
